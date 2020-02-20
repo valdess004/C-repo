@@ -1,0 +1,52 @@
+We have covered the following topics so far. Please answer
+with Y or N indicating whether you are comfortable with the topic.
+
+If you are not comfortable, you shoudd probably review it for the test!
+This is not a complete list!! GUI programming won't be on the test.
+
+[Y] Java primitive types
+[Y] automatic converting between primitive types
+[Y] casting primitive types
+[Y] everything in Java has a type
+[Y] static methods
+[Y] references
+[Y] null pointer exception
+[YN] The value of a reference, the value of a primitive
+[Y] what = means
+[Y] what == means
+[YN] Java is pass by value
+[Y] if, while, for
+[Y] scope of a variable
+[Y] shortcircuit boolean operators
+[Y] Basic OO-Java, this
+[Y] IS-A: what it means, UML and how it is expressed in Java
+[Y] HAS-A: what it means, UML and how it is expressed in Java
+[Y] RESPONDS-TO: what it means, UML and how it is expressed in Java
+[Y] git clone, add, commit, push, pull
+[Y] modifiers public, private, protected, no modifier
+[Y] modifier static vs no modifier
+[Y] Class design: protection on instance variables should be private unless ...
+[Y] Class design: protection on methods should is public when ...
+[Y] javadoc for classes
+[Y] javadoc for methods, annotations @param, @return
+[Y] building the javadoc
+[Y] Purpose of a class
+[Y] References and arrays
+[Y] What an import statement does
+[Y] What a package statement does
+[Y] Where to search for names within a class ie. i=7 vs this.i vs Balloon.i
+[N] JUnit tests
+[Y] overloading methods
+[Y] overloading constructors and calling them this(....)
+[Y] inheritance: extends
+[Y] calling the superclass methods with super
+[Y] overriding: the search for names
+[N] shadowing
+[N] abstract classes and how to use them (extend and implement)
+[Y] interfaces (implement)
+[Y] how many classes can a class extend
+[N] how many interfaces can a class implement
+[N] Liskov Substitution Principle
+[Y] UML class diagrams 
+[Y] Building a UML diagram in eclipse
+[Y] Generics: ArrayList vs ArrayList<Balloon>

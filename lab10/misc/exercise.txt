@@ -1,0 +1,79 @@
+1) Take a look at the class diagram and code for 
+   paint. The class diagram is in diagram.ucls
+   and in diagram.gif.
+
+   Identify the classes involved in the 
+
+   a) Factory Design Pattern
+
+      There are two, the ShapemanipulatorFactory and the Shape manipulator strategy.
+
+   b) Strategy Design Pattern
+
+	PaintPanel
+	View
+    	ShapeManipulatorStrategy
+     	CricleManipulatorStrategy
+	SquiggleManipulatorStrategy
+	RectangleManipulatorStrategy
+	
+
+   c) Command Design Pattern
+
+	PaintCommand
+	CircleCommand
+	RectangleCommand
+	SquiggleCommand
+
+   d) Which classes are observable. Which classes are
+      observers. Note that this is not included in the
+      class diagrams, so you will have to take a look at
+      the code.
+
+      Observable:
+
+	PaintPanel
+      	PaintModel
+	Shape
+
+      Observers are? What do they Observe?:
+
+      There are three, the PaintCommand which observes the PaintModel, PaintPanel which observes the PaintModel, Paintmodel which observes Shape. 
+
+2) Explain what happens in the code after each step in the following
+   sequence of events:
+
+   a) The user clicks the Circle button on the ShapeChooserPanel.
+
+      The button fires the handle event handler in the ShapeChooserPanel
+      which asks the ShapeManipulatorFactory for a CircleManipulatorStrategy
+      The CircleManipulatorStrategy is hooked up to to the PaintModel
+      so that the strategy can modify the PaintModel in response to mouse events.
+      This new CircleManipulatorStrategy is installed in the view
+      which in turn installs the strategy in the PaintPanel
+      so that now all PaintPanel mouse events are sent to the
+      new CircleManipulatorStrategy.
+
+   b) Next the user clicks in the Canvas on the PaintPanel.
+
+      The button fires the handle event handler in the PaintPanel, which asks the ShapeManipulatorStrategy's handler to manage the even as a mouse event. The Shape manipulator then takes the appropriate action depending on the designated mouse event, which is click.
+
+   c) Next the user drags the mouse across the Canvas in the PaintPanel.
+
+      The button fires the handle event handler in the PaintPanel, which asks the ShapeManipulatorStrategy's handler to manage the even as a mouse event. The Shape manipulator then takes the appropriate action depending on the designated mouse event, which is mouse drag.
+
+   d) Next the user clicks in the Canvas on the PaintPanel. 
+
+      This question is repeated, and is the same as part b. For the answer please refer to part b.
+
+   e) Next the user clicks the Rectangle Button on the ShapeChooserPanel.
+
+      	The button fires the handle event handler in the ShapeChooserPanel
+      	which asks the ShapeManipulatorFactory for a 		RectangleManipulatorStrategy.The RectangleManipulatorStrategy is 	hooked up to to the PaintModel so that the strategy can modify the 	PaintModel in response to mouse events.
+      	This new RectangleManipulatorStrategy is installed in the view
+      	which in turn installs the strategy in the PaintPanel
+      	so that now all PaintPanel mouse events are sent to the
+      	new RectangleManipulatorStrategy.
+
+
+
